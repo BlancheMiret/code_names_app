@@ -1,0 +1,57 @@
+<!doctype html>
+
+<!-- Mes commentaires -->
+
+<html lang="fr">
+
+  <head> <!-- tout ce qui ne sera pas affiché à l'écran-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"> <!-- Pour que page soit affichée aux bonnes dimensions, notamment sur téléphone.-->
+
+    <title>Ma page de test</title>
+    <link rel="stylesheet" href="CSS/style_test.css" type=text/css>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=TikTok+Sans">
+    <style>
+      body {
+        font-family: 'TikTok Sans', serif;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <h1>Hello World! Ceci est un titre</h1>
+    <p class=".tiktok-sans-<uniquifier>">Ceci est un <strong>paragraphe</strong>. Avez-vous bien compris ?</p>
+    <a href="http://www.google.fr">Cliquez ici pour vous rendre sur mon autre page</a> <!-- a pour "ancre" -->
+    <img src="images/generated_image.png" alt="Montagne"/> <!-- #Element vide --> <!-- alt: "alternatif" : description pour non voyants pex.-->
+
+    <form>
+      Ceci est un formulaire ?
+      <p>Voici un champ de texte :<input type="text"></p>
+      <p>Voici une checkbock :<input type="checkbox"></p>
+      <form> <input type="button" value="Click"/> </form>
+      <p id="my_button">Vous n'avez pas cliqué.</p>
+    </form>
+
+    <div>div est une balise de type block</div>
+    <p>p est aussi une balise de type block</p>
+    <span>En revanche, span est une balise de type inline.</span>
+    <a href="http://www.googe.fr">Et ceci est aussi une balise de type inline.</a>
+    <h1>h1 est une balise de type block</h1>
+    <span>La malheureuse balise span est obligée de se mettre en dessous.</span>
+
+    <p>Test de liste</p>
+    <ul>
+      <li>Mon premier élément de liste</li>
+      <li>Mon deuxième</li>
+      <li>Il y en a même un 3e !</li>
+    </ul>
+
+    <script src="scripts/main_test.js"></script> <!-- "Activation de javascript APRÈS le code HTML, sinon ne peut s'y appliquer."-->
+  </body>
+
+</html>

@@ -1,0 +1,24 @@
+h1
+{
+  text-align: center;
+  /* background-color: red; */
+}
+p
+{
+  /* color: green; */
+}
+#my_button{
+  color:red;
+}
+
+/*
+.tiktok-sans-<uniquifier> {
+  font-family: "TikTok Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100;
+}
+*/
