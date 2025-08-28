@@ -1,7 +1,3 @@
-src/font_test.html
-src/index_test.html
-src/test_button.html
-src/images/generated_image.png
-src/scripts/main_test.js
-src/scripts/button_test.js
-src/CSS/style_test.css
+archives/*
+tests/*
+backend/__pycache__/*
