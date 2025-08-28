@@ -7,14 +7,15 @@ MODEL = "deepseek-ai/DeepSeek-V3-0324"
 
 client = InferenceClient(api_key=HUGGINGFACE_API_KEY)
 
-@app.route("/get_code_name", methods=["GET"])
+@app.route("/get_code_name", methods=["POST"])
 def get_code_name():
+
     word_1 = request.json.get("word1")
     word_2 = request.json.get("word2")
     word_3 = request.json.get("word3")
 
     if not word_1:
-        return jsonify({"message":"You mest at least complete the word_1 field."}), 400
+        return jsonify({"message":"You must at least complete the 'Mot 1' field."}), 400
 
     completion = client.chat.completions.create(
         model = MODEL,
@@ -26,7 +27,8 @@ def get_code_name():
         ],
     )
     code_name = completion.choices[0].message['content']
-    return jsonify({"codeName":code_name}), 200
+    print(code_name)
+    return jsonify({"codeName":code_name})
 
 if __name__ == "__main__":
     app.run(debug=True)
