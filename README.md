@@ -10,20 +10,28 @@ The goal is to leverage IA to make senseful proposition when trying to think of 
 
 ### Requirements
 
+#### Install Python and Node
+
 To run this app, you'll need installed:
 
 - `Python`: you can dowload it [here](https://www.python.org/downloads/) (version used: 3.13.5).
 - `Node.js`: you can download it [here](https://nodejs.org/en/download/) (version used: 22.18.0).
 
-### Run the app
-
-- Install Python requirements
+#### Install Python requirements
 
 From the `root` directory:
 
 ```bash
 pip3 install -r requirements.txt
 ```
+
+#### Set up the Hungging Face API key
+
+This application use a model hosted on HuggingFace for the inference, and you will need to have a HuggingFace account and access token. It is free, and you can create both [here](https://huggingface.co/settings/tokens).
+
+Then, in the file `backend/main.py`, replace *your_huggingface_api_key* by you personal key.
+
+### Run the app
 
 - Start backend server
 
