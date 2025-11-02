@@ -25,7 +25,7 @@ From the `root` directory:
 pip3 install -r requirements.txt
 ```
 
-#### Set up the Hungging Face API key
+#### Set up the HunggingFace API key
 
 This application use a model hosted on HuggingFace for the inference, and you will need to have a HuggingFace account and access token. It is free, and you can create both [here](https://huggingface.co/settings/tokens).
 
